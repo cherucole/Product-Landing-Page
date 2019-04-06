@@ -1,12 +1,3 @@
-/* html,
-body,
-form,
-main {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    height: 100%;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +41,7 @@ a {
 }
 
 .fa-times {
-    /* display: none !important; */
+    display: none !important;
     cursor: pointer;
 }
 
@@ -240,7 +231,7 @@ nav ul li:hover {
     }
 
     nav ul li {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         line-height: 5rem;
     }
 
