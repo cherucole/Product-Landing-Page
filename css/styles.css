@@ -42,6 +42,7 @@ a {
 
 .fa-times {
     display: none !important;
+    display: none;
     cursor: pointer;
 }
 
@@ -289,12 +290,12 @@ nav ul li:hover {
         border: none;
     }
 
-    menu-toggle {
+    .menu-toggle {
         display: flex;
     }
 
     .fa-times {
-        display: block;
+        display: block !important;
         position: absolute;
         top: 2rem;
         right: 2rem;
