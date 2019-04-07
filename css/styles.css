@@ -351,7 +351,6 @@ nav ul li:hover {
 
     .tone-2 {
         all: unset;
-        /* width: 80%; */
     }
 
     .tone-2 img {
@@ -360,19 +359,29 @@ nav ul li:hover {
         margin-left: 20%;
     }
 
-    /* .carousel {
-        margin-top: 20rem;
-    } */
-
-    /* .tone-2 {
-        padding-top: 2rem;
-    } */
-    .tone-1 {
-        height: 100vh;
+    .carousel-control {
+        background: rgba(0, 0, 0, 0.28);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        margin:0 1rem;
+        top: 65%;
+        -webkit-transform: translate(0, -50%);
+        cursor: pointer;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 10;
     }
 
-    .product-info {
-        background-color: red;
+    .tone-1 {
+        height: 100vh;
     }
 
     .tone-2 img {
@@ -451,7 +460,7 @@ nav ul li:hover {
         opacity: 1;
     }
 }
-
+/* 
 @media screen and (max-width: 400px) {
     .tone-2 img {
         left: -1rem;
@@ -476,4 +485,4 @@ nav ul li:hover {
         padding: .7rem;
         font-size: .8rem;
     }
-}
+} */
