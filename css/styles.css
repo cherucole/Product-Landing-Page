@@ -461,29 +461,32 @@ nav ul li:hover {
     }
 }
 
-/* 
+
 @media screen and (max-width: 400px) {
-    .tone-2 img {
-        left: -1rem;
+    .product-info {
+        align-content: unset;
+        justify-content: unset;
     }
 
     .product-info h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 5rem;
     }
 
-    .product-info p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+    .tone-2 {
+        all: unset;
     }
 
-    .product-info h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+    .tone-2 img {
+        width: 70%;
+        margin-top: 40%;
+        margin-left: 20%;
     }
 
-    .btn {
-        padding: .7rem;
-        font-size: .8rem;
+    .carousel-control {
+        top: 75%;
     }
-} */
+
+    .carousel-indicators {
+        bottom: 5%;
+    }
+}
