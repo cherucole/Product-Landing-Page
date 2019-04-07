@@ -4,50 +4,96 @@
     box-sizing: border-box;
 }
 
-#prevBtn {
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
     position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: blue;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
     cursor: pointer;
-}
-
-#nextBtn {
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
     position: absolute;
+    margin-left: -5rem;
     top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    color: blue;
+    -webkit-transform: translate(0, -50%);
     cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
 }
 
-.carousel-container {
-    /* background-color: green; */
+.carousel-control.prev {
+    left: 2%;
+}
 
-    /* width: 60%; */
-    /* margin: auto; */
-    border: 5px solid black;
-    overflow: hidden;
-    /* position: relative; */
-    width: 100%;
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 50%;
-    left: -15rem;
-    transform: translateY(-50%);
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
 }
 
-.carousel-slide {
-    background-color: red;
-    display: flex;
-    /* width: 100%; */
-    /* height: 500px; */
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
 }
 
-.image {
-    height: auto !important;
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
 }
 
 html {
@@ -170,13 +216,13 @@ nav ul li:hover {
     position: relative;
 }
 
-/* .tone-2 img {
+.tone-2 img {
     width: 100%;
     position: absolute;
     top: 50%;
     left: -15rem;
     transform: translateY(-50%);
-} */
+}
 
 .product-info {
     display: flex;
