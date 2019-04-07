@@ -369,7 +369,7 @@ nav ul li:hover {
         height: 40px;
         line-height: 35px;
         position: absolute;
-        margin:0 1rem;
+        margin: 0 1rem;
         top: 65%;
         -webkit-transform: translate(0, -50%);
         cursor: pointer;
@@ -460,6 +460,7 @@ nav ul li:hover {
         opacity: 1;
     }
 }
+
 /* 
 @media screen and (max-width: 400px) {
     .tone-2 img {
