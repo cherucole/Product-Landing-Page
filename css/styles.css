@@ -335,6 +335,46 @@ nav ul li:hover {
 
 @media screen and (max-width: 600px) {
 
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-info {
+        align-content: unset;
+        justify-content: unset;
+    }
+
+    .product-info h1 {
+        margin-top: 10rem;
+    }
+
+    .tone-2 {
+        all: unset;
+        /* width: 80%; */
+    }
+
+    .tone-2 img {
+        width: 70%;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+
+    /* .carousel {
+        margin-top: 20rem;
+    } */
+
+    /* .tone-2 {
+        padding-top: 2rem;
+    } */
+    .tone-1 {
+        height: 100vh;
+    }
+
+    .product-info {
+        background-color: red;
+    }
+
     .tone-2 img {
         left: -2.5rem;
     }
